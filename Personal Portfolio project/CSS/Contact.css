@@ -1,31 +1,35 @@
-body {
-    margin: 0;
-    padding: 0;
-}
 
+body{
+    margin: 0%;
+    padding: 0%;
+}
 .hero {
     background-image: url(../images/background\ 1.jpg); 
     height: 100vh;
     background-size: cover;
     background-position: center;
+    /* position: relative; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0;
     padding: 20px;
-    /* Flex row to position content and image side by side */
-    flex-direction: row;
-    text-align: left; 
 }
 
 nav {
     width: 100%;
-    padding: 20px;
+    padding: 20px ;
+    /* margin-top: 1px; */
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: absolute;
     top: 0;
+    
+
 }
 
 nav ul {
@@ -49,9 +53,10 @@ nav ul li a:hover {
 }
 
 nav .btn {
-    background-color: hsla(239, 100%, 50%, 0.493);
+    background-color:hsla(239, 100%, 50%, 0.493);
     color: #ffffff;
     padding: 10px 20px;
+    margin-left: 0;
     text-decoration: none;
     border-radius: 25px;
     font-weight: bold;
@@ -64,52 +69,33 @@ nav .btn:hover {
 }
 
 .logo {
-    width: 100px;
+    width: 100px; 
     height: unset;
+    border: #333;
     border-radius: 50%;
 }
+
 
 .profile-img {
     border-radius: 50%;
-    width: 400px; 
-    height: 500px; 
+    width: 250px;
+    height: 250px;
     object-fit: cover;
-    margin-right: 20px; 
-    margin-left: 100px;
-    border: 2px solid hsla(239, 100%, 50%, 0.493);
+    margin-bottom: 20px;
+    border: 5px solid hsla(239, 100%, 50%, 0.493);
 }
+
 
 .content {
     max-width: 800px;
+    margin: auto;
     padding: 20px;
-    text-align: left;
 }
 
 .title {
     font-size: 1.2em;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    gap: 44;
-}
-
-.about-us-section {
-    max-width: 800px;
-    margin: 50px auto; 
-    padding: 20px;
-    text-align: left;
-}
-
-.about-us-section h1 {
-    font-size: 2.5em;
-    color: hsla(239, 100%, 50%, 0.493);
-    margin-bottom: 20px;
-}
-
-.about-us-section p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #0c0c0c;
-    margin-bottom: 20px;
 }
 
 h1 {
@@ -118,7 +104,7 @@ h1 {
 }
 
 h1 span {
-    color: hsla(239, 100%, 50%, 0.493);
+    color:hsla(239, 100%, 50%, 0.493);
 }
 
 p {
@@ -128,8 +114,44 @@ p {
     color: #0c0c0c;
 }
 
-.btn {
-    background-color: hsla(239, 100%, 50%, 0.493);
+
+.contact-section form {
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+}
+
+.contact-section form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-section form input, 
+.contact-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.contact-section form button {
+    background-color:hsla(239, 100%, 50%, 0.493);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-section form button:hover {
+    background-color: #333;
+}
+
+
+.content .btn {
+    background-color:hsla(239, 100%, 50%, 0.493);
     color: #fffefe;
     padding: 10px 20px;
     text-decoration: none;
@@ -138,8 +160,9 @@ p {
     transition: background-color 0.3s;
 }
 
-.btn:hover {
+.content .btn:hover {
     background-color: #333;
     color: rgb(255, 255, 255);
 }
+
 
